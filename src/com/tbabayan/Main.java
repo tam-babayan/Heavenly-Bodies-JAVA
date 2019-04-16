@@ -98,6 +98,7 @@ public class Main {
             System.out.println("\t" + satellite.getName());
         }
 
+        // Attempting to add a duplicate to a Set must result in no change to the set
         HeavenlyBody pluto1 = new DwarfPlanet("Pluto", 842);
         planets.add(pluto1);
 
@@ -105,6 +106,7 @@ public class Main {
             System.out.println(planet);
         }
 
+        // proves that equals is symmetric.
         HeavenlyBody earth1 = new Planet("Earth", 365);
         HeavenlyBody earth2 = new Planet("Earth", 365);
         System.out.println(earth1.equals(earth2));
