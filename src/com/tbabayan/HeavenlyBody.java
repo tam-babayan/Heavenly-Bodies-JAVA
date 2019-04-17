@@ -1,7 +1,5 @@
 package com.tbabayan;
 
-import com.sun.xml.internal.ws.wsdl.writer.document.soap.BodyType;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -51,6 +49,7 @@ public abstract class HeavenlyBody {
         if (this == obj) {
             return true;
         }
+
         if (obj instanceof HeavenlyBody) {
             HeavenlyBody theObj = (HeavenlyBody) obj;
             if (this.name.equals(theObj.getName())) {
